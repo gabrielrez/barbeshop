@@ -1,0 +1,173 @@
+:root {
+  --c0: #FFFFFF;
+  --c1: #403B32;
+  --c2: #A67233;
+  --c3: #D99C52;
+  --c4: #F2D16D;
+  --c5: #F2DABD;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--c2);
+}
+
+nav {
+  background-color: var(--c1);
+}
+
+main {
+  height: 70vh;
+  background-image: url(img/img-home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* UTILITARIO */
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c0 {
+  color: var(--c0);
+}
+
+.c5 {
+  color: var(--c5);
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.size-pp {
+  font-size: 0.875rem;
+}
+
+.size-p {
+  font-size: 1rem;
+}
+
+.size-g {
+  font-size: 4rem;
+}
+
+.size-gg {
+  font-size: 4.5rem;
+}
+
+.btn-primary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2px 80px;
+  background-color: var(--c2);
+  color: var(--c5);
+  box-shadow: 0px 5px 5px 0px rgba(64, 59, 50, 0.4);
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b67f3d;
+}
+
+/* UTILITARIO */
+
+.header-info {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.location {
+  display: flex;
+  gap: 24px;
+}
+
+.header-info span {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+  padding: 24px 0px;
+}
+
+.header-menu li a {
+  padding: 16px 0px;
+  transition: 0.3s ease;
+}
+
+.header-menu li a:hover {
+  color: var(--c5);
+}
+
+.main-container {
+  height: 64vh;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media(max-width: 1300px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .main-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-info {
+    flex-direction: column;
+  }
+
+  .header-info {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 800px) {
+  .header-menu {
+    display: none;
+  }
+}
