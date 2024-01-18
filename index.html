@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <div class="header-container">
       <div class="header-info container">
         <span class="c0 roboto size-pp"><img class="icon" src="img/time-icon.svg"> Segunda à Sábado - 09:00 às 20:00</span>
@@ -23,11 +23,11 @@
         </div>
       </div>
       <nav>
-        <ul class="header-menu container">
+        <ul class="header-menu container" data-menu="links-menu">
           <li><a class="c0 roboto size-p" href="#home">Home</a></li>
           <li><a class="c0 roboto size-p" href="#sobre">Sobre</a></li>
           <li><a class="c0 roboto size-p" href="#servicos">Serviços</a></li>
-          <li><a class="c0 roboto size-p" href="#contato">Contato</a></li>
+          <li><a class="c0 roboto size-p" href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -56,9 +56,18 @@
         <h1 class="services-title size-g bebas c1">Serviços</h1>
       </div>
       <ul class="services-box-imgs">
-        <li><img src="img/service-img1.jpg"></li>
-        <li><img src="img/service-img2.jpg"></li>
-        <li><img src="img/service-img3.jpg"></li>
+        <li>
+          <img src="img/service-img1.jpg">
+          <h3 class="c1 bebas size-mg">Cortes</h3>
+        </li>
+        <li>
+          <img src="img/service-img2.jpg">
+          <h3 class="c1 bebas size-mg">Barbas</h3>
+        </li>
+        <li>
+          <img src="img/service-img3.jpg">
+          <h3 class="c1 bebas size-mg">Penteados</h3>
+        </li>
       </ul>
     </div>
   </section>
@@ -88,13 +97,15 @@
             <li><a class="c5" href="#home">Home</a></li>
             <li><a class="c5" href="#sobre">Sobre</a></li>
             <li><a class="c5" href="#servicos">Serviços</a></li>
-            <li><a class="c5" href="#contato">Contato</a></li>
+            <li><a class="c5" href="contato.html">Contato</a></li>
           </ul>
         </nav>
       </div>
       <p class="c0 roboto size-p">Barbearia Barbeshop © Alguns direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
