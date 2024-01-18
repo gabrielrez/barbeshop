@@ -16,4 +16,24 @@ function initScroll() {
   })
 }
 
+function initAnimeScroll() {
+  const animeElements = document.querySelectorAll("[data-anime='scroll']");
+  const windowHalf = window.innerHeight * 0.6;
+
+  if (animeElements.length) {
+    function animeScroll() {
+      animeElements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top - windowHalf;
+        if (elementTop < 0) {
+          element.classList.add("active-animation");
+        }
+      })
+    }
+
+    animeScroll();
+    window.addEventListener("scroll", animeScroll);
+  }
+}
+
 initScroll();
+initAnimeScroll();
