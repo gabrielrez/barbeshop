@@ -35,5 +35,37 @@ function initAnimeScroll() {
   }
 }
 
+function initModal() {
+  const modalBtn = document.querySelectorAll(".modal-btn");
+  const modal = document.querySelector("[data-modal]");
+  const modalClose = document.querySelector(".close");
+  const events = ["click", "touchstart"];
+
+  function createModal() {
+    modal.classList.add("active");
+  }
+
+  function closeModal(event) {
+    modal.classList.remove("active");
+  }
+
+  function clickOutside(event) {
+    if (event.target === this) {
+      modal.classList.remove("active");
+    }
+  }
+
+  events.forEach((userEvent) => {
+    modalBtn.forEach((item) => {
+      item.addEventListener(userEvent, createModal);
+    })
+
+    modalClose.addEventListener(userEvent, closeModal);
+
+    modal.addEventListener(userEvent, clickOutside);
+  })
+}
+
 initScroll();
 initAnimeScroll();
+initModal();
