@@ -1,0 +1,38 @@
+.header-info {
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  gap: 24px;
+}
+
+.header-info span {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+  padding: 24px 0px;
+}
+
+.header-menu li a {
+  padding: 16px 0px;
+  transition: 0.3s ease;
+}
+
+.header-menu li a:hover {
+  color: var(--c5);
+}

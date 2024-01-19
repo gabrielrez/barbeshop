@@ -1,0 +1,31 @@
+.services-container {
+  padding-top: 120px;
+}
+
+.services-title {
+  display: flex;
+  align-items: center;
+}
+
+.services-title::before {
+  content: "";
+  width: 8px;
+  height: 40px;
+  background-color: var(--c2);
+  margin-right: 8px;
+}
+
+.services-box-imgs {
+  display: flex;
+  gap: 40px;
+  padding-top: 40px;
+  overflow-x: auto;
+}
+
+.services-box-imgs li {
+  min-width: 370px;
+}
+
+.services-box-imgs li h3 {
+  margin-top: 8px;
+}
